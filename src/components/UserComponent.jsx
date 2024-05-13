@@ -13,7 +13,7 @@ function UserComponent() {
   }
   console.log(userData);
   return (
-    <div className="w-fit h-fit bg-white p-5 rounded-xl border-[3px] ring-1 border-blue-700">
+    <div className="p-5 bg-white w-fit h-fit rounded-xl">
       <h2 className="font-bold">User Details</h2>
       {userData?.map((item) => (
         <div key={item.id}>

@@ -10,8 +10,8 @@ function CounterComponent() {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
   return (
-    <div className="min-w-[300px] max-w-fit h-[250px] bg-white rounded-xl flex flex-col p-5 gap-4 items-center justify-center text-black shadow-2xl border-[3px] ring-1 border-blue-700">
-      <h2 className="font-bold text-xl ">Counter</h2>
+    <div className="min-w-[300px] max-w-fit h-[250px] bg-white rounded-xl flex flex-col p-5 gap-4 items-center justify-center text-black shadow-2xl">
+      <h2 className="text-xl font-bold ">Counter</h2>
       <div className="flex items-center gap-5">
         <button
           className="size-5 rounded-full bg-red-500 text-white flex items-center justify-center text-xl pb-[7px] font-bold hover:scale-110 transition duration-100 active:scale-95"
@@ -28,7 +28,7 @@ function CounterComponent() {
         </button>
       </div>
       <input
-        className="rounded-md text-black p-2 border border-neutral-800"
+        className="p-2 text-black border rounded-md border-neutral-800"
         type="number"
         onChange={(e) =>
           dispatch(incrementByAmount(parseInt(e.target.value) || 0))
